@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cloragua NABG - Soluciones de calidad en productos de agua purificada y cloración.">
+    <meta name="keywords" content="Cloragua, NABG, agua purificada, cloración, limpieza, soluciones para agua">
+    <meta name="author" content="Cloragua NABG">
+    <meta property="og:title" content="Cloragua NABG - Líder en soluciones de agua">
+    <meta property="og:description" content="Productos y servicios innovadores para la purificación y cloración de agua.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x628">
+    <meta property="og:url" content="https://www.cloraguanabg.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cloragua NABG - Líder en soluciones de agua">
+    <meta name="twitter:description" content="Productos y servicios innovadores para la purificación y cloración de agua.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x628">
+    <title>Cloragua NABG | Aguateria</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.10/dist/cdn.min.js" defer=""></script>    <script src="https://kit.fontawesome.com/b3949f38f5.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
+  <link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+/>
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600"><img src="img/cropped-800.60-225x50.png" alt="logo cloraguanabg"></a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#servicios" class="hover:text-blue-500">Servicios</a>
+                <a href="#productos" class="hover:text-blue-500">Productos</a>
+                <a href="#testimonios" class="hover:text-blue-500">Testimonios</a>
+                <a href="#contacto" class="hover:text-blue-500">Contacto</a>
+            </nav>
+            <button class="md:hidden text-blue-500" x-data="{ open: false }" @click="open = !open">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Soluciones en agua purificada y cloración</h1>
+            <p class="mt-4 text-lg">Cloragua NABG ofrece productos y servicios innovadores para garantizar la calidad del agua en cada hogar y negocio.</p>
+            <a href="#contacto" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Contáctanos</a>
+        </div>
+    </section>
+
+<div class="flex flex-wrap items-center mb-16 container mx-auto p-4">
+    <div class="w-full md:w-1/2 order-1 mt-6 md:mt-0">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Nosotros</h3>
+        <p class="text-gray-600 mb-6">Somos una empresa de servicio de agua potable del sector privado, con más de 30 años de experiencia.
+            Nuestra infraestructura está diseñada conforme a las especificaciones técnicas establecidas por la Ley 1614/2000, 
+            que le garantiza un servicio potable las 24 horas del día, con una presión mínima de 10 metros columna de agua.
+        </p>
+        <h3 class="text-2xl font-bold text-blue-600 mt-1">Visión</h3>
+        <p class="text-lg text-gray-700">
+            Ser reconocida como empresa por la excelencia en el servicio de agua potable.
+        </p> 
+        <h3 class="text-2xl font-bold text-blue-600 mt-2">Misión</h3>
+        <p class="text-lg text-gray-700">
+            Brindar un servicio de calidad, utilizando racionalmente los recursos hídricos, 
+            protegiendo la salud y respetando los recursos naturales.
+        </p>   </div>
+    <div class="w-full md:w-1/2 order-2">
+        <img loading="lazy" src="https://cloragua.com.py/wp-content/uploads/2024/02/5-1024x1024.png" alt="Seguridad Digital" class="w-full md:w-2/3 mx-auto h-full object-cover rounded-lg shadow-lg">
+    </div>
+</div>
+
+<div class="flex flex-wrap items-center mb-6 container mx-auto p-4">
+    <div class="w-full md:w-1/3">
+        <img loading="lazy" src="img/6-768x768.png" alt="Seguridad Digital" class="w-full px-12 h-full object-cover rounded-lg shadow-lg">
+    </div>
+    <div class="w-full md:w-2/3 mt-6 md:mt-0">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Infraestructura</h3>
+        <p class="text-gray-600">Cloragua NABG cuenta con una moderna infraestructura. Cuatro estaciones de bombeos: dos estaciones de bombeo con tanques de 105 m3 de capacidad distribuyen el servicio por gravedad; y dos estaciones bombean del pozo a la red de distribución, controlados por relojes temporizadores.
+        </p>
+<li>Sobrada capacidad de producción. Con sus ocho pozos artesianos y equipos de electrobombas sumergibles producen 133 m3/h, satisfaciendo la demanda actual en ocho horas de trabajo.
+</li>   
+<li>Garantía de potabilidad del servicio. Su sistema de cloración inyecta cloro en forma automática, garantizando la potabilidad del agua y, protegiendo contra las contaminaciones.
+        </li>
+        <li>Para garantizar el servicio las 24 hs se cuenta con un transformador de 60 KVA y un generador de 110 KVA, que evita los cortes del servicio por falta de energía eléctrica.
+        </li> 
+        <li>Red de distribución nueva. Su red de distribución le permite ofrecer un servicio estable y continuo, porque está compuesta por tubos PVC de 160 mm, 110 mm, 85 mm y 75 mm, instaladas a un metro de profundidad; y sus ramales de 60 mm, 50 mm y 40 mm, instaladas a 80 cm de profundidad, conforme a las especificaciones técnicas de la Ley 1614/2000 y sus reglamentos.
+</li>       
+</div>
+</div>
+
+<!-- Agrega el contenedor del slider -->
+<div class="slider w-full max-w-6xl mx-auto">
+    <div>
+      <img
+        src="img/infraestructura/1-768x768.png"
+        alt="Imagen 1"
+        class="w-full object-cover"
+      />
+    </div>
+    <div>
+      <img
+        src="img/infraestructura/4-768x768.png"
+        alt="Imagen 2"
+        class="w-full object-cover"
+      />
+    </div>
+    <div>
+      <img
+        src="img/infraestructura/5-768x768.png"
+        alt="Imagen 3"
+        class="w-full object-cover"
+      />
+    </div>
+    <div>
+      <img
+        src="img/infraestructura/6-768x768.png"
+        alt="Imagen 4"
+        class="w-full object-cover"
+      />
+    </div>
+
+    <div>
+        <img
+          src="img/infraestructura/CORACION-768x768.jpg"
+          alt="Imagen 3"
+          class="w-full object-cover"
+        />
+      </div>
+      <div>
+        <img
+          src="img/infraestructura/generdador-2-768x768.jpg"
+          alt="Imagen 4"
+          class="w-full object-cover"
+        />
+      </div>
+      <div>
+        <img
+          src="img/infraestructura/Tranformador-2-768x768.jpg"
+          alt="Imagen 3"
+          class="w-full object-cover"
+        />
+      </div>
+
+  </div>
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+></script>
+<script>
+  $(document).ready(function () {
+    $(".slider").slick({
+      infinite: true, // Desplazamiento infinito
+      speed: 500, // Velocidad de la transición
+      slidesToShow: 4, // Mostrar 4 imágenes en pantallas grandes
+      slidesToScroll: 1, // Avanzar una imagen a la vez
+      responsive: [
+        {
+          breakpoint: 1024, // Dispositivos medianos
+          settings: {
+            slidesToShow: 3, // Mostrar 3 imágenes
+          },
+        },
+        {
+          breakpoint: 768, // Dispositivos móviles
+          settings: {
+            slidesToShow: 1, // Mostrar 1 imagen
+          },
+        },
+      ],
+    });
+  });
+</script>
+  
+  
+<section id="plano-de-cobertura" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-800">Plano  de cobertura</h2>
+        <div class="mt-10">
+            <img src="img/Plano-de-cobertura-768x329.png" alt="Plano de cobertura - Cloragua NABG" class="rounded-lg shadow-md hover:scale-105 transition-transform w-full md:w-2/3 mx-auto">
+        </div>
+    </div>
+</section>
+
+<div class="p-8 bg-gray-100 md:px-20">
+    <h2 class="text-3xl font-bold text-gray-800 mx-auto px-4 text-center py-4">Tarifa</h2>
+    <!-- Tabla para pantallas grandes -->
+    <table class="hidden md:table w-full text-sm text-left text-gray-500">
+        <thead class="text-gray-700 uppercase bg-gray-50">
+            <tr>
+                <th class="px-2 border border-gray-400 py-3 text-blue-500">Categoría</th>
+                <th class="px-2 border border-gray-400 py-3 text-blue-500">Mínimo</th>
+                <th class="px-2 border border-gray-400 py-3 text-blue-500">Total</th>
+                <th class="px-2 border border-gray-400 py-3 text-blue-500">Exceso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b">
+                <th class="px-2 border border-gray-400 text-gray-700 uppercase bg-gray-50">Residencial</th>
+                <td class="px-2 border border-gray-400 py-4">15 m³</td>
+                <td class="px-2 border border-gray-400 py-4">Gs. 57.120</td>
+                <td class="px-2 border border-gray-400 py-4">Gs. 4.620</td>
+            </tr>
+            <tr class="bg-gray-50">
+                <th class="px-2 border border-gray-400 text-gray-700 uppercase bg-gray-50">Comercial</th>
+                <td class="px-2 border border-gray-400 py-4">15 m³</td>
+                <td class="px-2 border border-gray-400 py-4">Gs. 62.720</td>
+                <td class="px-2 border border-gray-400 py-4">Gs. 5.060</td>
+            </tr>
+            <tr class="bg-white border-b">
+                <th class="px-2 border border-gray-400 text-gray-700 uppercase bg-gray-50">Industrial</th>
+                <td class="px-2 border border-gray-400 py-4">15 m³</td>
+                <td class="px-2 border border-gray-400 py-4">Gs. 82.880</td>
+                <td class="px-2 border border-gray-400 py-4">Gs. 6.600</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tarjetas para dispositivos móviles -->
+    <div class="md:hidden space-y-4">
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <h2 class="font-semibold text-blue-500 text-lg">Categoría: Residencial</h2>
+            <p class="text-gray-500">Mínimo: 15 m³</p>
+            <p class="text-gray-500">Total: Gs. 57.120</p>
+            <p class="text-gray-500">Exceso: Gs. 4.620</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <h2 class="font-semibold text-blue-500 text-lg">Categoría: Comercial</h2>
+            <p class="text-gray-500">Mínimo: 15 m³</p>
+            <p class="text-gray-500">Total: Gs. 62.720</p>
+            <p class="text-gray-500">Exceso: Gs. 5.060</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-4">
+            <h2 class="font-semibold text-blue-500 text-lg">Categoría: Industrial</h2>
+            <p class="text-gray-500">Mínimo: 15 m³</p>
+            <p class="text-gray-500">Total: Gs. 82.880</p>
+            <p class="text-gray-500">Exceso: Gs. 6.600</p>
+        </div>
+    </div>
+</div>
+
+
+    <section class="bg-gray-300 "> <div class=" mx-auto px-6 py-12 xl:px-20"> <div class="md:flex md:items-center md:justify-between"> <div class="md:w-1/2 mb-6 md:mb-0 xl:mx-20"> <h2 class="text-3xl font-semibold text-gray-800">Contacto</h2> <p class="text-gray-600 mt-4">Para más información o si tienes alguna pregunta, por favor, no dudes en contactarnos.</p> <div class="mt-8"> <p class="flex items-center text-gray-700 mb-2"> <i class="fa-solid fa-location-dot w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
+        Dirección: San Lorenzo, Central, Paraguay.
+        </p> <p class="flex items-center text-gray-700 mb-2"> <i class="fa-solid fa-phone w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
+        Teléfono: +595 983 882017
+        </p> <p class="flex items-center text-gray-700 mb-6"> <i class="fa-solid fa-envelope w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
+        Email: bytechpy@gmail.com
+        </p> <div class="flex flex-row items-center justify-center md:justify-start space-x-3 mt-5"> <a href="https://wa.me/595983882017" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-whatsapp" aria-hidden="true"></i></a> <a href="https://www.instagram.com/bytechpy/" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-instagram" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/company/bytechparaguay/" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-linkedin" aria-hidden="true"></i></a> </div> </div> </div> <div class="md:w-1/2 bg-white p-6 shadow-lg rounded-lg"> <h3 class="text-2xl text-gray-800 font-semibold mb-6">Envíanos un mensaje</h3> <form action="https://formsubmit.co/bytechpy@gmail.com" method="POST"> <div class="mb-4"> <label class="block text-gray-700">Nombre</label> <input type="text" name="name" placeholder="Tu nombre" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Email</label> <input type="email" name="email" placeholder="Tu email" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Telefono</label> <input type="number" name="number" placeholder="Tu numero" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Mensaje</label> <textarea name="message" rows="4" placeholder="Tu mensaje" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""></textarea> </div> <div class="flex justify-end mt-6"> <button type="submit" class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Enviar</button> </div> </form> </div> </div> </div> </section>
+
+<div class="px-10 mx-auto pb-4">
+    <h2 class="text-3xl font-bold text-gray-800 mx-auto px-4 text-center py-4">Ubicacion</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.3167437576174!2d-57.47878201771529!3d-25.36904073110709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945dad939ed6f395%3A0x4964d733891200b3!2sCloragua%20NABG!5e0!3m2!1ses-419!2sus!4v1708453375114!5m2!1ses-419!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>   <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Cloragua NABG. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="whatsapp-btn" class="fixed bottom-5 right-5 flex flex-col items-end"> <a href="https://wa.me/595983882017" target="_blank" class="bg-lime-600 text-white p-4 rounded-full text-2xl md:text-3xl"> <svg width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path> </svg> </a> </div>
+
+    
+</body>
+</html>
