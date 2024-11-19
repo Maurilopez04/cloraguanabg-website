@@ -38,22 +38,45 @@
 </head>
 <body class="font-sans antialiased bg-gray-100 text-gray-800">
     <!-- Navbar -->
-    <header class="bg-white shadow sticky top-0 z-50">
-        <div class="container mx-auto px-4 md:px-20 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-600"><img src="img/cropped-800.60-225x50.png" alt="logo cloraguanabg" width="190px"></a>
-            <nav class="hidden md:flex space-x-6">
-                <a href="#" class="hover:text-blue-500">Inicio</a>
-                <a href="#precios" class="hover:text-blue-500">Precios</a>
-                <a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="hover:text-blue-500">Ubicacion</a>
-                <a href="#contacto" class="hover:text-blue-500">Contacto</a>
-            </nav>
-            <button class="md:hidden text-blue-500" x-data="{ open: false }" @click="open = !open">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                </svg>
-            </button>
+<header x-data="{ open: false }" class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 md:px-20 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#" class="text-2xl font-bold text-blue-600">
+            <img src="img/cropped-800.60-225x50.png" alt="logo cloraguanabg" width="190px">
+        </a>
+
+        <!-- Menú de navegación (Escritorio) -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-blue-500">Inicio</a>
+            <a href="#precios" class="hover:text-blue-500">Precios</a>
+            <a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="hover:text-blue-500">Ubicacion</a>
+            <a href="#contacto" class="hover:text-blue-500">Contacto</a>
+        </nav>
+
+        <!-- Botón del Menú (Mobile) -->
+        <button @click="open = !open" class="md:hidden text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Menú desplegable (Mobile) -->
+    <nav 
+        x-show="open" 
+        x-transition 
+        class="md:hidden bg-white border-t border-gray-200 shadow-lg"
+        @click.away="open = false"
+    >
+        <div class="flex flex-col space-y-2 p-4">
+            <a href="#" class="hover:text-blue-500">Inicio</a>
+            <a href="#precios" class="hover:text-blue-500">Precios</a>
+            <a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="hover:text-blue-500">Ubicacion</a>
+            <a href="#contacto" class="hover:text-blue-500">Contacto</a>
         </div>
-    </header>
+    </nav>
+</header>
+
     <div class="relative bg-cover bg-center flex items-center text-white bg-blue-100 py-20 px-10 h-[450px]" style="background-image: url('img/AGUA.png');">
       <div class="relative z-10 md:w-3/4 mx-auto text-center">
           <p class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in" style="text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000;">
@@ -299,15 +322,15 @@
         <a href="https://www.facebook.com/cloraguanabg/?locale=es_LA" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-facebook" aria-hidden="true"></i></a> </div> </div> </div> 
         <div class="md:col-span-2"> <div class="flex justify-around flex-wrap"> 
           <div> <h3 class="text-xl font-semibold">Links Rápidos</h3> <ul class="mt-4 space-y-2"> 
-            <li><a href="/" class="hover:underline text-gray-400">Inicio</a></li> 
-            <li><a href="/#precios" class="hover:underline text-gray-400">Precios</a></li> 
+            <li><a href="#" class="hover:underline text-gray-400">Inicio</a></li> 
+            <li><a href="#precios" class="hover:underline text-gray-400">Precios</a></li> 
             <li><a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="hover:underline text-gray-400">Ubicacion</a></li> 
-            <li><a href="/#contacto" class="hover:underline text-gray-400">Contacto</a></li> </ul> </div> 
+            <li><a href="#contacto" class="hover:underline text-gray-400">Contacto</a></li> </ul> </div> 
           <div> <h3 class="text-xl font-semibold">Recursos</h3> <ul class="mt-4 space-y-2"> 
-            <li><a href="/#" class="hover:underline text-gray-400">FAQ</a></li> 
-            <li><a href="/#" class="hover:underline text-gray-400">Blog</a></li> 
-            <li><a href="/#sobre-nosotros" class="hover:underline text-gray-400">Sobre nosotros</a></li> 
-            <li><a href="/#" class="hover:underline text-gray-400">Términos y Condiciones</a></li> </ul> </div> 
+            <li><a href="#" class="hover:underline text-gray-400">FAQ</a></li> 
+            <li><a href="#" class="hover:underline text-gray-400">Blog</a></li> 
+            <li><a href="#sobre-nosotros" class="hover:underline text-gray-400">Sobre nosotros</a></li> 
+            <li><a href="#" class="hover:underline text-gray-400">Términos y Condiciones</a></li> </ul> </div> 
         <div class="mt-4 md:mt-0"> <h3 class="text-xl font-semibold">Suscríbete</h3> <form action="https://formsubmit.co/bytechpy@gmail.com" method="POST" class="mt-4"> <input type="email" name="email" placeholder="Tu correo electrónico" class="mt-1 p-2 w-full text-gray-800 rounded-md" required=""> <button type="submit" class="w-full mt-3 bg-blue-500 hover:bg-blue-500 text-white p-2 rounded-md">Suscríbete</button> </form> </div> </div> </div> </div>
          <div class="text-center p-4 bg-gray-200 mt-8"> <p class="text-gray-900">© <a href="https://cloragua.com.py" class="text-blue-700">Cloragua NABG</a> 2024. Diseñado por <a class="text-yellow-500" href="https://bytech.site">Bytech Paraguay.</a></p> </div> </footer>
 
