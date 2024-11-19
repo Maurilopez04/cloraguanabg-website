@@ -9,7 +9,7 @@
     <meta property="og:title" content="Cloragua NABG - Líder en soluciones de agua">
     <meta property="og:description" content="Productos y servicios innovadores para la purificación y cloración de agua.">
     <meta property="og:image" content="https://via.placeholder.com/1200x628">
-    <meta property="og:url" content="https://www.cloraguanabg.com">
+    <meta property="og:url" content="https://cloragua.com.py">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cloragua NABG - Líder en soluciones de agua">
@@ -29,16 +29,22 @@
   type="text/css"
   href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
 />
+<style>
+  .slick-prev:before,
+.slick-next:before {
+    color:rgb(28, 60, 224); 
+}
+</style>
 </head>
 <body class="font-sans antialiased bg-gray-100 text-gray-800">
     <!-- Navbar -->
     <header class="bg-white shadow sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-600"><img src="img/cropped-800.60-225x50.png" alt="logo cloraguanabg"></a>
+        <div class="container mx-auto px-4 md:px-20 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600"><img src="img/cropped-800.60-225x50.png" alt="logo cloraguanabg" width="190px"></a>
             <nav class="hidden md:flex space-x-6">
-                <a href="#servicios" class="hover:text-blue-500">Servicios</a>
-                <a href="#productos" class="hover:text-blue-500">Productos</a>
-                <a href="#testimonios" class="hover:text-blue-500">Testimonios</a>
+                <a href="#" class="hover:text-blue-500">Inicio</a>
+                <a href="#precios" class="hover:text-blue-500">Precios</a>
+                <a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="hover:text-blue-500">Ubicacion</a>
                 <a href="#contacto" class="hover:text-blue-500">Contacto</a>
             </nav>
             <button class="md:hidden text-blue-500" x-data="{ open: false }" @click="open = !open">
@@ -48,19 +54,29 @@
             </button>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="bg-blue-500 text-white py-20">
-        <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-bold">Soluciones en agua purificada y cloración</h1>
-            <p class="mt-4 text-lg">Cloragua NABG ofrece productos y servicios innovadores para garantizar la calidad del agua en cada hogar y negocio.</p>
-            <a href="#contacto" class="mt-6 inline-block bg-white text-blue-500 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Contáctanos</a>
-        </div>
-    </section>
+    <div class="relative bg-cover bg-center flex items-center text-white bg-blue-100 py-20 px-10 h-[450px]" style="background-image: url('img/AGUA.png');">
+      <div class="relative z-10 md:w-3/4 mx-auto text-center">
+          <p class="text-4xl md:text-5xl font-bold mb-4 animate-fade-in" style="text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000;">
+            Servicio de agua potable
+          </p>
+          <p class="text-2xl md:text-3xl mb-8 md:mx-40 leading-none animate-slide-up text-gray-100" style="text-shadow: 0.5px 0.5px 0 #000, -0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000;">
+            Cloragua NABG garantiza un servicio de agua potable las 24 horas del día.
+          </p>
+          <div class="flex flex-wrap md:flex-nowrap justify-center gap-2 md:gap-4">
+              <a href="https://wa.me/+595974344644" class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-3 px-5 flex items-center gap-2 rounded-full transition duration-300 ease-in-out animate-bounce-in">
+                        <svg width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path> </svg> 
+                        Contáctanos</a>
+              <a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="bg-transparent border-2 border-white flex items-center gap-2 hover:bg-white hover:text-black text-white font-bold py-3 px-5 rounded-full transition duration-300 ease-in-out animate-bounce-in-delay">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+                 Ubicacion
+              </a>
+          </div>
+      </div>
+  </div>
 
 <div class="flex flex-wrap items-center mb-16 container mx-auto p-4">
-    <div class="w-full md:w-1/2 order-1 mt-6 md:mt-0">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">Nosotros</h3>
+    <div class="w-full md:w-1/2 order-1 mt-6 md:mt-0 px-6">
+        <h3 class="text-3xl font-bold text-gray-800 mb-4" id="sobre-nosotros">Nosotros</h3>
         <p class="text-gray-600 mb-6">Somos una empresa de servicio de agua potable del sector privado, con más de 30 años de experiencia.
             Nuestra infraestructura está diseñada conforme a las especificaciones técnicas establecidas por la Ley 1614/2000, 
             que le garantiza un servicio potable las 24 horas del día, con una presión mínima de 10 metros columna de agua.
@@ -73,18 +89,20 @@
         <p class="text-lg text-gray-700">
             Brindar un servicio de calidad, utilizando racionalmente los recursos hídricos, 
             protegiendo la salud y respetando los recursos naturales.
-        </p>   </div>
-    <div class="w-full md:w-1/2 order-2">
-        <img loading="lazy" src="https://cloragua.com.py/wp-content/uploads/2024/02/5-1024x1024.png" alt="Seguridad Digital" class="w-full md:w-2/3 mx-auto h-full object-cover rounded-lg shadow-lg">
+        </p>   
+      </div>
+        
+    <div class="w-full md:w-1/2 order-2 md:px-16">
+        <img loading="lazy" src="img/infraestructura/5-768x768.png" alt="Seguridad Digital" class="w-full md:w-2/3 mx-auto h-full object-cover rounded-lg shadow-lg">
     </div>
 </div>
 
-<div class="flex flex-wrap items-center mb-6 container mx-auto p-4">
+<div class="flex flex-wrap items-center mb-6 container mx-auto p-4 md:px-12">
+<h3 class="text-3xl font-bold text-gray-800 mt-4 text-center w-full">Infraestructura</h3>
     <div class="w-full md:w-1/3">
-        <img loading="lazy" src="img/6-768x768.png" alt="Seguridad Digital" class="w-full px-12 h-full object-cover rounded-lg shadow-lg">
+        <img loading="lazy" src="img/6-768x768.png" alt="Seguridad Digital" class="md:w-3/4 mx-auto h-full object-cover rounded-lg shadow-lg">
     </div>
     <div class="w-full md:w-2/3 mt-6 md:mt-0">
-        <h3 class="text-3xl font-bold text-gray-800 mb-4">Infraestructura</h3>
         <p class="text-gray-600">Cloragua NABG cuenta con una moderna infraestructura. Cuatro estaciones de bombeos: dos estaciones de bombeo con tanques de 105 m3 de capacidad distribuyen el servicio por gravedad; y dos estaciones bombean del pozo a la red de distribución, controlados por relojes temporizadores.
         </p>
 <li>Sobrada capacidad de producción. Con sus ocho pozos artesianos y equipos de electrobombas sumergibles producen 133 m3/h, satisfaciendo la demanda actual en ocho horas de trabajo.
@@ -99,33 +117,33 @@
 </div>
 
 <!-- Agrega el contenedor del slider -->
-<div class="slider w-full max-w-6xl mx-auto">
+<div class="slider w-full max-w-6xl mx-auto my-4">
     <div>
       <img
         src="img/infraestructura/1-768x768.png"
         alt="Imagen 1"
-        class="w-full object-cover"
+        class="w-full object-cover px-1"
       />
     </div>
     <div>
       <img
         src="img/infraestructura/4-768x768.png"
         alt="Imagen 2"
-        class="w-full object-cover"
+        class="w-full object-cover px-1"
       />
     </div>
     <div>
       <img
         src="img/infraestructura/5-768x768.png"
         alt="Imagen 3"
-        class="w-full object-cover"
+        class="w-full object-cover px-1"
       />
     </div>
     <div>
       <img
         src="img/infraestructura/6-768x768.png"
         alt="Imagen 4"
-        class="w-full object-cover"
+        class="w-full object-cover px-1"
       />
     </div>
 
@@ -133,21 +151,21 @@
         <img
           src="img/infraestructura/CORACION-768x768.jpg"
           alt="Imagen 3"
-          class="w-full object-cover"
+          class="w-full object-cover px-1"
         />
       </div>
       <div>
         <img
           src="img/infraestructura/generdador-2-768x768.jpg"
           alt="Imagen 4"
-          class="w-full object-cover"
+          class="w-full object-cover px-1"
         />
       </div>
       <div>
         <img
           src="img/infraestructura/Tranformador-2-768x768.jpg"
           alt="Imagen 3"
-          class="w-full object-cover"
+          class="w-full object-cover px-1"
         />
       </div>
 
@@ -160,6 +178,7 @@
 <script>
   $(document).ready(function () {
     $(".slider").slick({
+    
       infinite: true, // Desplazamiento infinito
       speed: 500, // Velocidad de la transición
       slidesToShow: 4, // Mostrar 4 imágenes en pantallas grandes
@@ -174,7 +193,9 @@
         {
           breakpoint: 768, // Dispositivos móviles
           settings: {
+            dots: true,
             slidesToShow: 1, // Mostrar 1 imagen
+            arrows: false
           },
         },
       ],
@@ -192,8 +213,8 @@
     </div>
 </section>
 
-<div class="p-8 bg-gray-100 md:px-20">
-    <h2 class="text-3xl font-bold text-gray-800 mx-auto px-4 text-center py-4">Tarifa</h2>
+<div class="p-8 bg-gray-100 md:px-20" id="precios">
+    <h2 class="text-3xl font-bold text-gray-800 mx-auto px-4 text-center py-4" >Tarifa</h2>
     <!-- Tabla para pantallas grandes -->
     <table class="hidden md:table w-full text-sm text-left text-gray-500">
         <thead class="text-gray-700 uppercase bg-gray-50">
@@ -250,25 +271,49 @@
 </div>
 
 
-    <section class="bg-gray-300 "> <div class=" mx-auto px-6 py-12 xl:px-20"> <div class="md:flex md:items-center md:justify-between"> <div class="md:w-1/2 mb-6 md:mb-0 xl:mx-20"> <h2 class="text-3xl font-semibold text-gray-800">Contacto</h2> <p class="text-gray-600 mt-4">Para más información o si tienes alguna pregunta, por favor, no dudes en contactarnos.</p> <div class="mt-8"> <p class="flex items-center text-gray-700 mb-2"> <i class="fa-solid fa-location-dot w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
-        Dirección: San Lorenzo, Central, Paraguay.
+    <section class="bg-gray-200 " id="contacto"> <div class=" mx-auto px-6 py-12 xl:px-20"> <div class="md:flex md:items-center md:justify-between"> <div class="md:w-1/2 mb-6 md:mb-0 xl:mx-20"> <h2 class="text-3xl font-semibold text-gray-800">Contacto</h2> <p class="text-gray-600 mt-4">Para más información o si tienes alguna pregunta, por favor, no dudes en contactarnos.</p> <div class="mt-8"> <p class="flex items-center text-gray-700 mb-2"> <i class="fa-solid fa-location-dot w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
+        Dirección: Julio Correa e/ Paraguayo Independiente ( Ruta 1 km 17½ - Capiata).
         </p> <p class="flex items-center text-gray-700 mb-2"> <i class="fa-solid fa-phone w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
-        Teléfono: +595 983 882017
+        Teléfono: +595 974 344644
         </p> <p class="flex items-center text-gray-700 mb-6"> <i class="fa-solid fa-envelope w-6 h-6 fill-current text-blue-500 mr-3 mt-2" aria-hidden="true"></i>
-        Email: bytechpy@gmail.com
-        </p> <div class="flex flex-row items-center justify-center md:justify-start space-x-3 mt-5"> <a href="https://wa.me/595983882017" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-whatsapp" aria-hidden="true"></i></a> <a href="https://www.instagram.com/bytechpy/" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-instagram" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/company/bytechparaguay/" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-linkedin" aria-hidden="true"></i></a> </div> </div> </div> <div class="md:w-1/2 bg-white p-6 shadow-lg rounded-lg"> <h3 class="text-2xl text-gray-800 font-semibold mb-6">Envíanos un mensaje</h3> <form action="https://formsubmit.co/bytechpy@gmail.com" method="POST"> <div class="mb-4"> <label class="block text-gray-700">Nombre</label> <input type="text" name="name" placeholder="Tu nombre" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Email</label> <input type="email" name="email" placeholder="Tu email" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Telefono</label> <input type="number" name="number" placeholder="Tu numero" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Mensaje</label> <textarea name="message" rows="4" placeholder="Tu mensaje" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""></textarea> </div> <div class="flex justify-end mt-6"> <button type="submit" class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Enviar</button> </div> </form> </div> </div> </div> </section>
+        Email: cloraguanabg@hotmail.com
+        </p> 
+        <div class="flex flex-row items-center justify-center md:justify-start space-x-3 mt-5"> 
+          <a href="https://wa.me/+595974344644" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-whatsapp" aria-hidden="true"></i></a> 
+          <a href="https://www.instagram.com/cloraguanabg/" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-instagram" aria-hidden="true"></i></a> 
+          <a href="https://www.facebook.com/cloraguanabg/?locale=es_LA" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-facebook" aria-hidden="true"></i></a> </div> </div> </div> 
+          <div class="md:w-1/2 bg-white p-6 shadow-lg rounded-lg"> <h3 class="text-2xl text-gray-800 font-semibold mb-6">Envíanos un mensaje</h3> <form action="https://formsubmit.co/bytechpy@gmail.com" method="POST"> <div class="mb-4"> <label class="block text-gray-700">Nombre</label> <input type="text" name="name" placeholder="Tu nombre" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Email</label> <input type="email" name="email" placeholder="Tu email" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Telefono</label> <input type="number" name="number" placeholder="Tu numero" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""> </div> <div class="mb-4"> <label class="block text-gray-700">Mensaje</label> <textarea name="message" rows="4" placeholder="Tu mensaje" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500" required=""></textarea> </div> <div class="flex justify-end mt-6"> <button type="submit" class="px-6 py-2 leading-5 text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Enviar</button> </div> </form> </div> </div> </div> </section>
 
-<div class="px-10 mx-auto pb-4">
+<div class="px-10 mx-auto pb-4 bg-white">
     <h2 class="text-3xl font-bold text-gray-800 mx-auto px-4 text-center py-4">Ubicacion</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225.3167437576174!2d-57.47878201771529!3d-25.36904073110709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945dad939ed6f395%3A0x4964d733891200b3!2sCloragua%20NABG!5e0!3m2!1ses-419!2sus!4v1708453375114!5m2!1ses-419!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>   <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 Cloragua NABG. Todos los derechos reservados.</p>
-        </div>
-    </footer>
+</div>  
 
-    <div id="whatsapp-btn" class="fixed bottom-5 right-5 flex flex-col items-end"> <a href="https://wa.me/595983882017" target="_blank" class="bg-lime-600 text-white p-4 rounded-full text-2xl md:text-3xl"> <svg width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path> </svg> </a> </div>
+<footer class="bg-gray-100 text-gray-900"> <div class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8"> 
+  <div> <a href="#" class="text-3xl font-bold hover:text-gray-400">
+    <img src="img/cropped-800.60-225x50.png" width="180px" alt=""></a> 
+    <p class="mt-4 text-gray-400">Servicio de agua potable las 24 horas del día.</p> <div class="mt-6"> <h3 class="text-sm uppercase font-bold text-gray-500">Conéctate con nosotros</h3> 
+      <div class="flex flex-row items-center justify-center md:justify-start space-x-3 mt-5"> 
+        <a href="https://wa.me/+595974344644" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-whatsapp" aria-hidden="true"></i></a> 
+        <a href="https://www.instagram.com/cloraguanabg/" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-instagram" aria-hidden="true"></i></a> 
+        <a href="https://www.facebook.com/cloraguanabg/?locale=es_LA" target="_blank" class="w-10 h-10 items-center justify-center inline-flex rounded-2xl font-bold text-lg  text-white bg-blue-500 hover:drop-shadow-lg cursor-pointer transition ease-in duration-300"><i class="fab fa-facebook" aria-hidden="true"></i></a> </div> </div> </div> 
+        <div class="md:col-span-2"> <div class="flex justify-around flex-wrap"> 
+          <div> <h3 class="text-xl font-semibold">Links Rápidos</h3> <ul class="mt-4 space-y-2"> 
+            <li><a href="/" class="hover:underline text-gray-400">Inicio</a></li> 
+            <li><a href="/#precios" class="hover:underline text-gray-400">Precios</a></li> 
+            <li><a href="https://maps.app.goo.gl/tNhNiHcRysqfipdg8" class="hover:underline text-gray-400">Ubicacion</a></li> 
+            <li><a href="/#contacto" class="hover:underline text-gray-400">Contacto</a></li> </ul> </div> 
+          <div> <h3 class="text-xl font-semibold">Recursos</h3> <ul class="mt-4 space-y-2"> 
+            <li><a href="/#" class="hover:underline text-gray-400">FAQ</a></li> 
+            <li><a href="/#" class="hover:underline text-gray-400">Blog</a></li> 
+            <li><a href="/#sobre-nosotros" class="hover:underline text-gray-400">Sobre nosotros</a></li> 
+            <li><a href="/#" class="hover:underline text-gray-400">Términos y Condiciones</a></li> </ul> </div> 
+        <div class="mt-4 md:mt-0"> <h3 class="text-xl font-semibold">Suscríbete</h3> <form action="https://formsubmit.co/bytechpy@gmail.com" method="POST" class="mt-4"> <input type="email" name="email" placeholder="Tu correo electrónico" class="mt-1 p-2 w-full text-gray-800 rounded-md" required=""> <button type="submit" class="w-full mt-3 bg-blue-500 hover:bg-blue-500 text-white p-2 rounded-md">Suscríbete</button> </form> </div> </div> </div> </div>
+         <div class="text-center p-4 bg-gray-200 mt-8"> <p class="text-gray-900">© <a href="https://cloragua.com.py" class="text-blue-700">Cloragua NABG</a> 2024. Diseñado por <a class="text-yellow-500" href="https://bytech.site">Bytech Paraguay.</a></p> </div> </footer>
+
+    <div id="whatsapp-btn" class="fixed bottom-5 right-5 flex flex-col items-end"> <a href="https://wa.me/+595974344644" target="_blank" class="bg-lime-600 text-white p-4 rounded-full text-2xl md:text-3xl"> 
+      <svg width="25" height="25" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path> </svg> 
+    </a> </div>
 
     
 </body>
